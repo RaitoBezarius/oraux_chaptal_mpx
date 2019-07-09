@@ -20,7 +20,7 @@ On note $B_n$ le nombre de partitions à $n$ éléments.
 
 (4) À l'aide de Python, calculer: $B_{p + m} - B_m - B_{m + 1}$ pour $m \in [[0, 50]], p \in \{2,3,5,7\}$.
 
-(5) Pour $P, Q$ deux partitions, on introduit la relation: $P \sim Q$ si $\exists k \in \Z, Q = c^k \circ P$ où $c = (1, \ldots, p)$ permutation de $[[1, p + m]]$.
+(5) Pour $P, Q$ deux partitions, on introduit la relation: $P \sim Q$ si $\exists k \in \Z, Q = c^k \circ P$ où $c = (1, \ldots, p)$ permutation de $[[1, p + m]]$. ^[Attention: moi et Aymane ne parvenons pas à donner du sens à $c$…]
 
 Montrer que $\sim$ est une relation d'équivalence.
 
@@ -229,6 +229,28 @@ Soit $P \in \R[X]$ scindé à racines simples.
 Soit $a_n = \left[\sum_{k=1}^n \ln^2(k)\right]^{-1}$.
 
 Nature de $\displaystyle \sum_{n \geq 2} a_n$.
+
+## (Mines-Télécom Spécifiques, Ismail) --- Jeu sur la définition de l'adhérence
+
+Soit $(E, \norm{\cdot})$ un espace vectoriel normée et $A, B$ deux ensembles non vide.
+
+(1) Rappeler la caractérisation séquentielle de l'adhérence.
+
+(2) Montrer que: $A \subset B \iff \overline{A} \subset \overline{B}$.
+
+(3) Montrer qu'on a: $\overline{A \cap B} \subset \overline{A} \cap \overline{B}$. A-t-on l'égalité en général ?
+
+## (Mines-Télécom Spécifiques, Ismail) --- Autour du logarithme intégral
+
+Soit $f : x \mapsto \int_0^1 \dfrac{t - 1}{\ln t} t^x \dt$.
+
+(1) Montrer que $t \mapsto \dfrac{t - 1}{\ln t} t^x$ est prolongeable par continuité en $1$.
+
+(2) Montrer que $f$ est bien définie sur $]-1, +\infty[$.
+
+(3) Montrer que $f$ est dérivable sur $]-1, +\infty[$.
+
+(4) En déduire l'expression de $f$.
 
 ## (CCP, Aymane) --- Un peu de projection
 
