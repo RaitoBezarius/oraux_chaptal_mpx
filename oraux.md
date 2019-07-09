@@ -6,6 +6,30 @@ homework-assignment: true
 toc: true
 ---
 
+## (Centrale, Python, Aymane) --- Actions de groupes planquées et permutations
+
+Soit $A$ partie de $E$, on note $\sigma \cdot A = \sigma(A)$ pour $\sigma$ une permutation.
+
+On note $B_n$ le nombre de partitions à $n$ éléments.
+
+(1) Calcul de $B_1, B_2, B_3$.
+
+(2) Montrer que: $\forall n \in \N, B_{n + 1} = \sum_{k=0}^n \binom{n}{k} B_k$.
+
+(3) Écrire `B(n)` qui renvoie la liste $(B_k)_{k \in [[0, n]]}$. Vérifier que $B_6 = 203$.
+
+(4) À l'aide de Python, calculer: $B_{p + m} - B_m - B_{m + 1}$ pour $m \in [[0, 50]], p \in \{2,3,5,7\}$.
+
+(5) Pour $P, Q$ deux partitions, on introduit la relation: $P \sim Q$ si $\exists k \in \Z, Q = c^k \circ P$ où $c = (1, \ldots, p)$ permutation de $[[1, p + m]]$.
+
+Montrer que $\sim$ est une relation d'équivalence.
+
+(6) Soit $P$ partition, supposons $P \neq cP$, montrer alors: $\{ P, cP, \ldots, c^{p - 1} P \}$ est une classe d'équivalence pour $\sim$.
+
+(7) Si $P = cP$, montrer qu'il y a une alternative (?).
+
+(8) En déduire $B_{p + m} = B_m + B_{m + 1} \pmod {p}$.
+
 ## (Centrale, Python, Paul) --- Complexité moyenne d'un tri rapide
 
 Soient $X_1, \ldots, X_n$ des VA d'un espace probabilisé ($\Omega, \tau, \PR$).
@@ -127,6 +151,47 @@ Soit $A \in \M_n(\C)$, supposons que:
 (2) $\Sp(A^2) \subset \R_{+}^{*}$
 
 Montrer que $A$ est diagonalisable.
+
+## (Mines Télécom, Paul) --- Série avec une bonne tronche d'arctangente
+
+Définissons, pour tout $x \in \R_{+}^{*}$, $f : x \mapsto \sum_{n=1}^{+\infty} \dfrac{1}{n + xn^2}$.
+
+(1) Convergence de $f$ ? Montrer que $f$ est continue sur son domaine de convergence.
+
+(2) Équivalent de $f$ en $0$ et $+\infty$.
+
+## (Mines Télécom, Paul) --- Espaces stables mais pas sur leurs appuis
+
+Soit $u \in \LinearApps(\R^3)$.
+
+On a: $u^3 = 0$ et $u^2 \neq 0$.
+
+Décrire les sous espaces stables par $u$.
+
+## (Mines Télécom, Arthur) --- Le bon vieux trick $\log-\exp$ et la DES
+
+Montrer la convergence de $\sum \ln \dfrac{(2n + 1)n}{(2n - 1)(n + 1)}$ et calculer sa somme.
+
+
+## (Mines Télécom, Arthur) --- Endomorphisme de moyennage
+
+Soit $E$ l'espace vectoriel des fonctions continues de $[0, 1]$ dans $\R$.
+
+Posons:
+
+\begin{equation*}
+        \application{\varphi}{E}{E}{f}{\left\{\application{F(f)}{[0,1]}{\R}{x}{
+                \left\{
+                \begin{aligned}
+                        & f(0) \text{ si } x = 0 \\
+                        & \dfrac{1}{x} \int_0^x f(t) \dt \text{ si } x \in ]0, 1]
+                \end{aligned}
+                \right.}\right.}
+\end{equation*}
+
+(1) Justifier que $\varphi$ est bien définie.
+
+(2) Donner les valeurs propres de $\varphi$ et ses vecteurs propres.
 
 ## (Mines-Ponts, Ali) --- Équation fonctionnelle (opérateurs de somme)
 
